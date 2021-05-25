@@ -1,0 +1,53 @@
+.positionModal{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .backGround {
+    -webkit-box-shadow: 10px 11px 8px 0 rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 10px 11px 8px 0 rgba(34, 60, 80, 0.2);
+    box-shadow: 10px 11px 8px 0 rgba(34, 60, 80, 0.2);
+    background-color: white;
+    border-radius: 10px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:150px;
+    .btn_sure{
+      min-width: 80px;
+      height: 40px;
+      border: none;
+      border-radius: 5px;
+      background-color: red;
+      color: white;
+      font-weight: 700;
+      font-size: 25px;
+      &:hover{
+        transition: 0.2s;
+        color: white;
+        background-color: #FFB200FF;
+        cursor: pointer;
+      }
+    }
+    .btn_no {
+      margin-left: 10px;
+      min-width:80px;
+      height: 40px;
+      border: none;
+      border-radius: 5px;
+      background-color: green;
+      color: white;
+      font-weight: 700;
+      font-size: 25px;
+      &:hover{
+        transition: 0.2s;
+        color: white;
+        background-color: #FFB200FF;
+        cursor: pointer;
+      }
+    }
+  }
+}
+

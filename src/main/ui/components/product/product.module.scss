@@ -1,0 +1,47 @@
+.background_item {
+  border-radius: 5px;
+  background-color: darkgrey;
+  width: 100%;
+  height: 450px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img{
+    width: 180px;
+    height: 170px;
+    margin-top: 10px
+  }
+}
+.description_block_style {
+  padding: 10px 10px;
+  margin-top: 15px;
+  width: 80%;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  .description_elem{
+    display: flex;
+  }
+  h1{
+    text-align: center;
+    font-size: 25px;
+  }
+}
+.btn_more{
+  margin-top: 15px;
+  margin-left: 10px;
+  min-width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: gold;
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+  &:hover{
+    transition: 0.2s;
+    color: white;
+    background-color: #FFB200FF;
+    cursor: pointer;
+  }
+}

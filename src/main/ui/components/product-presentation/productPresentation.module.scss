@@ -1,0 +1,135 @@
+.back_ground {
+  position: relative;
+  background-color: #A9A9A959;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 20px 15px;
+}
+.img_style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #282c34;
+  border-radius: 10px;
+  img{
+    width: auto;
+    height: 500px;
+    object-fit: cover;
+  }
+}
+.manage_block{
+  border-radius: 10px;
+  background-color: white;
+  height: 500px;
+  padding: 10px;
+  .btn_block{
+    padding: 0 10px;
+    display: flex;
+    justify-content: flex-end;
+    .button_edit{
+      margin-top: 15px;
+      margin-left: 10px;
+      min-width: 100px;
+      height: 30px;
+      border: none;
+      border-radius: 5px;
+      background-color: gold;
+      color: black;
+      font-weight: 700;
+      font-size: 18px;
+      &:hover{
+        transition: 0.2s;
+        color: white;
+        background-color: #FFB200FF;
+        cursor: pointer;
+      }
+    }
+    .button_delete{
+      margin-top: 15px;
+      margin-left: 10px;
+      min-width: 100px;
+      height: 30px;
+      border: none;
+      border-radius: 5px;
+      background-color: red;
+      color: black;
+      font-weight: 700;
+      font-size: 18px;
+      &:hover{
+        transition: 0.2s;
+        color: white;
+        background-color: #FFB200FF;
+        cursor: pointer;
+      }
+    }
+  }
+  .height_desc{
+    p{
+      font-size: 20px;
+      font-weight: 700;
+      span{
+        font-size: 24px;
+        font-weight: 600;
+        color: forestgreen;
+      }
+    }
+  }
+  .low_desc{
+    p{
+      font-size: 20px;
+      font-weight: 700;
+      span{
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+.low_info_style {
+  padding: 15px;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.comments_block{
+  .positionItems{
+    display: flex;
+  }
+  button{
+    min-width: 100px;
+    height: 80px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    background-color: #FFD700FF;
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+    &:hover{
+      transition: 0.2s;
+      color: white;
+      background-color: #FFB200FF;
+      cursor: pointer;
+    }
+  }
+  textarea{
+    resize: none;
+    border-radius: 10px 0 0 10px;
+    min-width: 600px;
+    height: 80px;
+    &:focus{
+      outline: none;
+    }
+  }
+}
+.modal_new_product {
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(169,169,169, 0.7);
+  position: absolute;
+  border-radius: 10px;
+}
+.modal_new_product_hide {
+  display: none;
+}

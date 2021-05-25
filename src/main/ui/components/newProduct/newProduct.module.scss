@@ -1,0 +1,92 @@
+.newProduct {
+  display: flex;
+  justify-content: center;
+  .modalWindow{
+    -webkit-box-shadow: 10px 11px 8px 0 rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 10px 11px 8px 0 rgba(34, 60, 80, 0.2);
+    box-shadow: 10px 11px 8px 0 rgba(34, 60, 80, 0.2);
+    margin-top: 80px;
+    width: 550px;
+    height: 800px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+  }
+  .wrapper_btn_cancel{
+    display: flex;
+    justify-content: flex-end;
+    button{
+        margin-left: 10px;
+        min-width: 70px;
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+        background-color: red;
+        color: white;
+        font-weight: 600;
+        font-size: 18px;
+        &:hover{
+          transition: 0.2s;
+          color: white;
+          background-color: #FFB200FF;
+          cursor: pointer;
+        }
+    }
+  }
+  .modalItem{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    p{
+      margin: 0;
+      font-weight: 700;
+      font-size: 20px;
+    }
+    input{
+      margin-left: 10px;
+      border-radius: 5px;
+      border: 1px solid;
+      width: 300px;
+      height: 40px;
+    }
+  }
+  .modalItemDescription{
+    margin-top: 15px;
+    p{
+      margin: 0;
+      font-weight: 700;
+      font-size: 20px;
+    }
+    textarea{
+      width: 100%;
+      height: 200px;
+      resize: none;
+    }
+  }
+}
+.wrapper_btn_add{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  .btn_add {
+    margin-left: 10px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFD700FF;
+    color: black;
+    font-weight: 700;
+    font-size: 25px;
+    &:hover{
+      transition: 0.2s;
+      color: white;
+      background-color: #FFB200FF;
+      cursor: pointer;
+    }
+  }
+}
+
+

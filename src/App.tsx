@@ -1,24 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useEffect} from 'react';
 import './App.css';
+import MainContainer from "./main/ui/components/main/mainContainer";
+import ProductPresentationContainer from "./main/ui/components/product-presentation/productPresentationContainer";
+import Header from "./main/ui/components/Header/header";
+import { Route } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { getItemsTC } from './main/bll/reducers/app-reducer';
 
 function App() {
+    const dispatch = useDispatch()
+    useEffect(()=>{
+        dispatch(getItemsTC())
+    },[])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <Header/>
+        <Route exact  path={'/'} render={()=>
+            <MainContainer/>
+        }/>
+        <Route exact path={'/item/:itemId?'} render={()=>
+            <ProductPresentationContainer/>
+        }/>
     </div>
   );
 }
